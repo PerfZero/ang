@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Instructions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <style>
+
+        body{
+            font-family: "Manrope", sans-serif;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .instruction {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .instruction span {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="instruction">
+        <span>Look - смотри (на картинку)</span>
+        <button onclick="playAudio('SteosVoice 482694.mp3')">🔊</button>
+    </div>
+    <div class="instruction">
+        <span>Watch - смотри (видео)</span>
+        <button onclick="playAudio('SteosVoice 449801.mp3')">🔊</button>
+    </div>
+    <div class="instruction">
+        <span>Listen - слушай</span>
+        <button onclick="playAudio('SteosVoice 860862.mp3')">🔊</button>
+    </div>
+    <div class="instruction">
+        <span>Match - соедини</span>
+        <button onclick="playAudio('SteosVoice 592483.mp3')">🔊</button>
+    </div>
+    <div class="instruction">
+        <span>Repeat - повтори</span>
+        <button onclick="playAudio('SteosVoice 223214.mp3')">🔊</button>
+    </div>
+    <div class="instruction">
+        <span>Say - скажи</span>
+        <button onclick="playAudio('SteosVoice 684971.mp3')">🔊</button>
+    </div>
+
+    <audio id="audioPlayer" controls style="display: none;">
+        <source id="audioSource" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        function playAudio(fileName) {
+            var audio = document.getElementById('audioPlayer');
+            var source = document.getElementById('audioSource');
+            source.src = fileName;
+            audio.load();
+            audio.play();
+        }
+    </script>
+</body>
+</html>
