@@ -1,16 +1,18 @@
 body {
-  font-family: "Caveat", cursive;
-  color: #ab4949;
-  display: flex;
-  align-items: stretch;
-  flex-direction: column;
-  background-image: url(/bg.jpg);
-  background-repeat: no-repeat;
-  height: 100vh;
-  /* justify-content: center; */
-  max-width: 430px;
-  margin: 0;
-  height: 100%;
+    font-family: "Caveat", cursive;
+    color: #ab4949;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    /* justify-content: center; */
+    /* max-width: 430px; */
+    margin: 0;
+    height: 100%;
+
 }
 
 .container{
@@ -122,6 +124,7 @@ h1 {
   margin-left: 10px;
   margin-left: 10px;
   font-weight: 900;
+
   padding-right: 25px;
   flex: 1;
 }
