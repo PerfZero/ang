@@ -11,10 +11,29 @@
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
       rel="stylesheet"
     />
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();
+  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(98064992, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/98064992" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
   </head>
   <body>
 
     <div class="welcome-message" id="welcomeMessage">Привет, Ксюша!</div>
+
+    <div class="menu-overlay" id="menuOverlay"></div>
+
 
     <header class="header">
 
@@ -26,9 +45,10 @@
 </header>
   <div class="menu-content" id="menuContent">
       <div class="button-container">
-          <span class="lesson-button" onclick="showLesson(1)">1 урок</span>
-          <span class="lesson-button" onclick="showLesson(2)">2 урок</span>
-          <span class="lesson-button" onclick="showLesson(3)">3 урок</span>
+          <span class="lesson-button" onclick="showLesson(1)">1 Verbs</span>
+          <span class="lesson-button" onclick="showLesson(2)">2 Wild Animals</span>
+          <span class="lesson-button" onclick="showLesson(3)">3 Colors</span>
+          <span class="lesson-button" onclick="showLesson(4)">4 Days of the Week</span>
       </div>
   </div>
 
@@ -37,32 +57,32 @@
       <h1>Verbs of the Lesson</h1>
       <div class="instruction">
         <span>Look - смотри (на картинку)</span>
-        <button onclick="playAudio('SteosVoice 482694.mp3')"></button>
+        <button onclick="playAudio('SteosVoice 482694.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
       <div class="instruction">
         <span>Watch - смотри (видео)</span>
-        <button onclick="playAudio('SteosVoice 449801.mp3')"></button>
+        <button onclick="playAudio('SteosVoice 449801.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
       <div class="instruction">
         <span>Listen - слушай</span>
-        <button onclick="playAudio('SteosVoice 860862.mp3')"></button>
+        <button onclick="playAudio('SteosVoice 860862.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
 
       <div class="instruction">
         <span>Read - читай</span>
-        <button onclick="playAudio('reed.mp3')"></button>
+        <button onclick="playAudio('reed.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
       <div class="instruction">
         <span>Match - соедини</span>
-        <button onclick="playAudio('SteosVoice 592483.mp3')"></button>
+        <button onclick="playAudio('SteosVoice 592483.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
       <div class="instruction">
         <span>Repeat - повтори</span>
-        <button onclick="playAudio('SteosVoice 223214.mp3')"></button>
+        <button onclick="playAudio('SteosVoice 223214.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
       <div class="instruction">
         <span>Say - скажи</span>
-        <button onclick="playAudio('SteosVoice 684971.mp3')"></button>
+        <button onclick="playAudio('SteosVoice 684971.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
     </div>
 
@@ -70,57 +90,57 @@
       <h1>Wild Animals</h1>
       <div class="instruction">
         <span>Lion - лев</span>
-        <button onclick="playAudio('Lion.mp3')"></button>
+        <button onclick="playAudio('Lion.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
       <div class="instruction">
         <span>Elephant - слон</span>
-        <button onclick="playAudio('Elephant.mp3')"></button>
+        <button onclick="playAudio('Elephant.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
 
       <div class="instruction">
         <span>Giraffe - жираф</span>
-        <button onclick="playAudio('Giraffe.mp3')"></button>
+        <button onclick="playAudio('Giraffe.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
 
       <div class="instruction">
         <span>Monkey - обезьяна</span>
-        <button onclick="playAudio('Monkey.mp3')"></button>
+        <button onclick="playAudio('Monkey.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
 
       <div class="instruction">
         <span>Crocodile - крокодил</span>
-        <button onclick="playAudio('Crocodile.mp3')"></button>
+        <button onclick="playAudio('Crocodile.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
 
       <div class="instruction">
         <span>Gorilla - горилла</span>
-        <button onclick="playAudio('Gorilla.mp3')"></button>
+        <button onclick="playAudio('Gorilla.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
 
       <div class="instruction">
         <span>Zebra - зебра</span>
-        <button onclick="playAudio('Zebra.mp3')"></button>
+        <button onclick="playAudio('Zebra.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
 
       <div class="instruction">
         <span>Tiger - тигр</span>
-        <button onclick="playAudio('Tiger.mp3')"></button>
+        <button onclick="playAudio('Tiger.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
 
       <div class="instruction">
         <span>Rhinoceros (rhino) - носорог</span>
-        <button onclick="playAudio('Rhinoceros.mp3')"></button>
-        <button onclick="playAudio('Rhino.mp3')"></button>
+        <button onclick="playAudio('Rhinoceros.mp3')"><img src="/volume.svg" alt=""></button>
+        <button onclick="playAudio('Rhino.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
 
       <div class="instruction">
         <span>Bear - медведь</span>
-        <button onclick="playAudio('Bear.mp3')"></button>
+        <button onclick="playAudio('Bear.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
 
       <div class="instruction">
         <span>Wolf - волк</span>
-        <button onclick="playAudio('Wolf.mp3')"></button>
+        <button onclick="playAudio('Wolf.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
       <button class="yo">
         <a href="https://www.youtube.com/watch?v=CA6Mofzh7jo&t"
@@ -133,66 +153,66 @@
       <h1>Colors</h1>
       <div class="instruction">
         <span>White - белый</span>
-        <button onclick="playAudio('white.mp3')"></button>
+        <button onclick="playAudio('white.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
       <div class="instruction">
         <span>Black - черный</span>
-        <button onclick="playAudio('Black.mp3')"></button>
+        <button onclick="playAudio('Black.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
 
       <div class="instruction">
         <span>Red - красный</span>
-        <button onclick="playAudio('Red.mp3')"></button>
+        <button onclick="playAudio('Red.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
 
       <div class="instruction">
         <span>Yellow - желтый</span>
-        <button onclick="playAudio('Yellow.mp3')"></button>
+        <button onclick="playAudio('Yellow.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
 
       <div class="instruction">
         <span>Orange - оранжевый</span>
-        <button onclick="playAudio('Orange.mp3')"></button>
+        <button onclick="playAudio('Orange.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
 
       <div class="instruction">
         <span>Green - зеленый</span>
-        <button onclick="playAudio('Green.mp3')"></button>
+        <button onclick="playAudio('Green.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
 
       <div class="instruction">
         <span>Blue - синий</span>
-        <button onclick="playAudio('Blue.mp3')"></button>
+        <button onclick="playAudio('Blue.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
 
       <div class="instruction">
         <span>Purple - фиолетовый</span>
-        <button onclick="playAudio('Purple.mp3')"></button>
+        <button onclick="playAudio('Purple.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
 
       <div class="instruction">
         <span>Pink - розовый</span>
-        <button onclick="playAudio('Pink.mp3')"></button>
+        <button onclick="playAudio('Pink.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
 
       <div class="instruction">
         <span>Brown - коричневый</span>
-        <button onclick="playAudio('Brown.mp3')"></button>
+        <button onclick="playAudio('Brown.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
 
       <div class="instruction">
         <span>Gray - серый </span>
-        <button onclick="playAudio('gray.mp3')"></button>
+        <button onclick="playAudio('gray.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
 
       <div class="instruction">
         <span>Silver - серебряный</span>
-        <button onclick="playAudio('Silver.mp3')"></button>
+        <button onclick="playAudio('Silver.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
 
       <div class="instruction">
         <span>Golden - золотой</span>
-        <button onclick="playAudio('Golden.mp3')"></button>
+        <button onclick="playAudio('Golden.mp3')"><img src="/volume.svg" alt=""></button>
       </div>
       <div class="game_button">
         <button class="game_button-list">
@@ -208,6 +228,68 @@
       </div>
     </div>
 
+    
+    <div id="lesson4" class="lesson-content">
+      <h1 class="lessons-list-4">Days of the Week</h1>
+      <div class="instruction">
+        <span class="lessons-list-4">Monday - понедельник</span>
+        <button onclick="playAudio('/lessons/4/monday.mp3')"><img src="/volume.svg" alt=""></button>
+      </div>
+
+      <div class="instruction">
+        <span class="lessons-list-4">Tuesday - вторник</span>
+        <button onclick="playAudio('/lessons/4/Tuesday.mp3')"><img src="/volume.svg" alt=""></button>
+      </div>
+
+      <div class="instruction">
+        <span class="lessons-list-4">Wednesday - среда</span>
+        <button onclick="playAudio('/lessons/4/Wednesday.mp3')"><img src="/volume.svg" alt=""></button>
+      </div>
+
+      <div class="instruction">
+        <span class="lessons-list-4">Thursday - четверг</span>
+        <button onclick="playAudio('/lessons/4/Thursday.mp3')"><img src="/volume.svg" alt=""></button>
+      </div>
+
+      <div class="instruction">
+        <span class="lessons-list-4">Friday - пятница</span>
+        <button onclick="playAudio('/lessons/4/Friday.mp3')"><img src="/volume.svg" alt=""></button>
+      </div>
+
+      <div class="instruction">
+        <span class="lessons-list-4">Saturday - суббота </span>
+        <button onclick="playAudio('/lessons/4/Saturday.mp3')"><img src="/volume.svg" alt=""></button>
+      </div>
+
+      <div class="instruction">
+        <span class="lessons-list-4">Sunday - воскресенье</span>
+        <button onclick="playAudio('/lessons/4/Sunday.mp3')"><img src="/volume.svg" alt=""></button>
+      </div>
+
+      <div class="instruction">
+        <span class="lessons-list-4">Day - день </span>
+        <button onclick="playAudio('/lessons/4/Day.mp3')"><img src="/volume.svg" alt=""></button>
+      </div>
+
+      <div class="instruction">
+        <span class="lessons-list-4">Week - неделя</span>
+        <button onclick="playAudio('/lessons/4/Week.mp3')"><img src="/volume.svg" alt=""></button>
+      </div>
+
+      <button class="yo">
+        <a href="https://www.youtube.com/watch?v=mXMofxtDPUQ"
+          ><span>Watch </span>YouTube</a
+        >
+      </button>
+      <button class="yo">
+        <a href="https://www.youtube.com/watch?v=poQGhbve36g"
+          ><span>Watch </span>YouTube</a
+        >
+      </button>
+    
+     
+    </div>
+
     <audio id="audioPlayer" controls style="display: none">
       <source id="audioSource" type="audio/mpeg" />
       Your browser does not support the audio element.
@@ -216,46 +298,58 @@
     <script>
       function toggleMenu() {
         const menu = document.getElementById('menuContent');
+        const overlay = document.getElementById('menuOverlay');
         const burgerMenu = document.querySelector('.burger-menu');
         
+        // Переключаем видимость меню и оверлея
         menu.classList.toggle('active');
+        overlay.classList.toggle('active');
         burgerMenu.classList.toggle('cross');
     }
-
+    
     document.addEventListener('click', function (event) {
         const menu = document.getElementById('menuContent');
+        const overlay = document.getElementById('menuOverlay');
         const burger = document.querySelector('.burger-menu');
         const isClickInsideMenu = menu.contains(event.target);
         const isClickInsideBurger = burger.contains(event.target);
-
-        if (!isClickInsideMenu && !isClickInsideBurger) {
+        const isClickInsideOverlay = overlay.contains(event.target);
+    
+        // Закрываем меню и оверлей, если клик произошел вне меню и кнопки-бургера
+        if (!isClickInsideMenu && !isClickInsideBurger && !isClickInsideOverlay) {
             menu.classList.remove('active');
+            overlay.classList.remove('active');
             burger.classList.remove('cross');
         }
     });
-
+    
     function showLesson(lessonNumber) {
         var lessons = document.querySelectorAll(".lesson-content");
         var buttons = document.querySelectorAll(".lesson-button");
-
+    
+        // Скрываем все уроки и сбрасываем активное состояние кнопок
         lessons.forEach(function (lesson) {
             lesson.classList.remove("active");
         });
-
+    
         buttons.forEach(function (button) {
             button.classList.remove("active");
         });
-
+    
+        // Показываем выбранный урок и активируем соответствующую кнопку
         document.getElementById("lesson" + lessonNumber).classList.add("active");
         document.querySelector(".lesson-button:nth-of-type(" + lessonNumber + ")").classList.add("active");
-
+    
+        // Закрываем меню и оверлей после выбора урока
         const menu = document.getElementById('menuContent');
+        const overlay = document.getElementById('menuOverlay');
         const burgerMenu = document.querySelector('.burger-menu');
         
         menu.classList.remove('active');
+        overlay.classList.remove('active');
         burgerMenu.classList.remove('cross');
     }
-
+    
     function playAudio(fileName) {
         var audio = document.getElementById("audioPlayer");
         var source = document.getElementById("audioSource");
@@ -263,17 +357,18 @@
         audio.load();
         audio.play();
     }
-
+    
     // Показать первый урок по умолчанию
     showLesson(1);
-
+    
     // Приветственное сообщение
     window.addEventListener('load', function () {
         const welcomeMessage = document.getElementById('welcomeMessage');
         setTimeout(function () {
             welcomeMessage.classList.add('hidden');
-        }, 2000); // Сообщение исчезает через 2 секунды
+        }, 1); // Сообщение исчезает через 2 секунды
     });
+    
     </script>
   </body>
 </html>
