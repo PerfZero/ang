@@ -49,6 +49,7 @@
           <span class="lesson-button" onclick="showLesson(2)">2 Wild Animals</span>
           <span class="lesson-button" onclick="showLesson(3)">3 Colors</span>
           <span class="lesson-button" onclick="showLesson(4)">4 Days of the Week</span>
+          <span class="lesson-button" onclick="showLesson(5)">5 Seasons</span>
       </div>
   </div>
 
@@ -290,6 +291,68 @@
      
     </div>
 
+    <div id="lesson5" class="lesson-content">
+      <div class="lessont-block">
+      <h1 class="lessons-list-5">Seasons  </h1>
+      <div class="instruction">
+        <span class="lessons-list-5">Winter - зима</span>
+        <button onclick="playAudio('/lessons/3/SteosVoice 564023.mp3')"><img src="/volume.svg" alt=""></button>
+      </div>
+
+      <div class="instruction">
+        <span class="lessons-list-5">Spring - весна</span>
+        <button onclick="playAudio('/lessons/3/SteosVoice 143649.mp3')"><img src="/volume.svg" alt=""></button>
+      </div>
+
+      <div class="instruction">
+        <span class="lessons-list-5">Summer - лето</span>
+        <button onclick="playAudio('/lessons/3/SteosVoice 871706.mp3')"><img src="/volume.svg" alt=""></button>
+      </div>
+
+      <div class="instruction">
+        <span class="lessons-list-5">Fall / Autumn - осень</span>
+        <button onclick="playAudio('/lessons/3/SteosVoice 407268.mp3')"><img src="/volume.svg" alt=""></button>
+        <button onclick="playAudio('/lessons/3/SteosVoice 617283.mp3')"><img src="/volume.svg" alt=""></button>
+
+      </div>
+
+    </div>  
+    <button class="yo">
+      <a href="https://youtu.be/Wrjqz2GTzzI?feature=shared"
+        ><span>Watch </span>YouTube</a
+      >
+    </button>
+    <button class="yo">
+      <a href="https://wordwall.net/es/resource/10100343/english/seasons-game-open-the-box"
+        ><span>Play </span>Game</a
+      >
+    </button>
+
+    <form id="seasonForm">
+      <div class="input-group">
+          <label for="winter">Winter:</label>
+          <input type="text" id="winter" name="winter">
+          <span class="error" id="winterError"></span>
+      </div>
+      <div class="input-group">
+          <label for="spring">Spring:</label>
+          <input type="text" id="spring" name="spring">
+          <span class="error" id="springError"></span>
+      </div>
+      <div class="input-group">
+          <label for="summer">Summer:</label>
+          <input type="text" id="summer" name="summer">
+          <span class="error" id="summerError"></span>
+      </div>
+      <div class="input-group">
+          <label for="fall">Fall:</label>
+          <input type="text" id="fall" name="fall">
+          <span class="error" id="fallError"></span>
+      </div>
+      <button type="submit">Check</button>
+  </form>
+    </div>
+
     <audio id="audioPlayer" controls style="display: none">
       <source id="audioSource" type="audio/mpeg" />
       Your browser does not support the audio element.
@@ -368,6 +431,50 @@
             welcomeMessage.classList.add('hidden');
         }, 2000); // Сообщение исчезает через 2 секунды
     });
+
+    document.getElementById('seasonForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const seasons = {
+        winter: 'Winter',
+        spring: 'Spring',
+        summer: 'Summer',
+        fall: ['Fall', 'Autumn']
+    };
+
+    const inputs = {
+        winter: document.getElementById('winter'),
+        spring: document.getElementById('spring'),
+        summer: document.getElementById('summer'),
+        fall: document.getElementById('fall')
+    };
+
+    const errors = {
+        winter: document.getElementById('winterError'),
+        spring: document.getElementById('springError'),
+        summer: document.getElementById('summerError'),
+        fall: document.getElementById('fallError')
+    };
+
+    let isValid = true;
+
+    for (const season in seasons) {
+        const inputValue = inputs[season].value.trim();
+        const correctValues = Array.isArray(seasons[season]) ? seasons[season] : [seasons[season]];
+
+        if (correctValues.includes(inputValue)) {
+            errors[season].textContent = 'V';
+        } else {
+            errors[season].textContent = 'X';
+            isValid = false;
+        }
+    }
+
+    if (isValid) {
+        alert('All seasons are correct!');
+    }
+});
+
     
     </script>
   </body>
