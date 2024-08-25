@@ -360,6 +360,15 @@ svg {
   margin: 30px 0;
 }
 
+.check_word{
+  font-size: 36px;
+  color: #de8083 !important;
+}
+
+#lesson5 .yo{
+  background-color: #de8083 !important;
+}
+
 #seasonForm input{
 border: 1px solid #de8083 !important;
 background: none;
@@ -371,13 +380,14 @@ padding: 10px;
 font-size: 24px;
 width: 100px;
 display: inline-block;
+color: #de8083 !important;
   }
 
   
 #seasonForm button{
   font-weight: 600;
   color: #fff;
-  background: #fd0000;
+  background:  #de8083 !important;;
   width: 170px;
   bottom: -130px;
   border: 0;

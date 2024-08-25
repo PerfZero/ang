@@ -329,6 +329,7 @@
     </button>
 
     <form id="seasonForm">
+      <P class="check_word">Type in the seasons (напечатай времена года)</P>
       <div class="input-group">
           <label for="winter">Winter:</label>
           <input type="text" id="winter" name="winter">
@@ -459,8 +460,8 @@
     let isValid = true;
 
     for (const season in seasons) {
-        const inputValue = inputs[season].value.trim();
-        const correctValues = Array.isArray(seasons[season]) ? seasons[season] : [seasons[season]];
+        const inputValue = inputs[season].value.trim().toLowerCase();
+        const correctValues = Array.isArray(seasons[season]) ? seasons[season].map(val => val.toLowerCase()) : [seasons[season].toLowerCase()];
 
         if (correctValues.includes(inputValue)) {
             errors[season].textContent = 'V';
@@ -474,6 +475,7 @@
         alert('All seasons are correct!');
     }
 });
+
 
     
     </script>
